@@ -37,7 +37,7 @@ section {
 
 div#imagem {
     margin: auto;
-    width: 85vw;
+    width: 90vw;
     height: 38vh;
     background: black url('../imagens/pexels-dom-j-310479.jpg') center bottom no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@ div#imagem {
 
 div#formulario {
     margin: auto;
-    width: 85vw;
+    width: 90vw;
     height: 50vh;
     background-color: white;
     border-bottom-left-radius: 20px;
