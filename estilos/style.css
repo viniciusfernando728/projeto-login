@@ -1,7 +1,78 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints
+    Celular: até 768px
+    Demais telas: a partir de 768px
+*/
+
 /*
     Paleta de Cores
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #49a09d;
+    --cor02: #5f2c82;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--cor02);
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+div#imagem {
+    margin: auto;
+    width: 70vw;
+    height: 38vh;
+    background: black url('../imagens/pexels-dom-j-310479.jpg') center bottom no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    position: absolute;
+    top: 24%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+div#formulario {
+    margin: auto;
+    width: 70vw;
+    height: 50vh;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    position: absolute;
+    top: 68%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+div#formulario h1{
+    padding: 15px 10px 0px;
+    text-align: center;
+}
+
+div#formulario > p {
+    font-size: 0.9em;
+    text-align: left;
+    padding: 15px;
+}
