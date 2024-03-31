@@ -12,8 +12,10 @@
 */
 
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 :root {
@@ -25,54 +27,41 @@ html {
     height: 100vh;
 }
 
-body {
+body, html {
     background-color: var(--cor02);
 }
 
-section {
+main {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-div#imagem {
-    margin: auto;
-    width: 90vw;
-    height: 38vh;
-    background: black url('../imagens/pexels-dom-j-310479.jpg') center bottom no-repeat;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-    position: absolute;
-    top: 24%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-}
-
-div#formulario {
-    margin: auto;
-    width: 90vw;
-    height: 50vh;
+section#login {
+    border-radius: 20px;
     background-color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 
     position: absolute;
-    top: 68%;
+    top: 50%;
     left: 50%;
 
     transform: translate(-50%, -50%);
 }
 
-div#formulario h1{
-    padding: 15px 10px 0px;
-    text-align: center;
+section#login >div#imagem {
+    display: block;
+    background: #5f2c82 url('../imagens/pexels-dom-j-310479.jpg') center bottom no-repeat
+    ;
+    background-size: cover;
+    height: 200px;
+    width: 250px;
 }
 
-div#formulario > p {
-    font-size: 0.9em;
-    text-align: left;
-    padding: 15px;
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css" media="screen and (min-width: 769px)">
 </head>
 <body>
     <main>
@@ -16,7 +17,7 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
-                    <div>
+                    <div class="login">
                         <label for="ilogin">Login</label>
                         <input type="email" name="login" id="ilogin" required  placeholder="Seu E-mail">
                     </div>
@@ -24,7 +25,7 @@
                         <label for="isenha">Senha</label>
                         <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Sua senha de 8 dígitos">
                     </div>
-                    <div>
+                    <div id="submit">
                         <input type="submit" value="Entrar">
                     </div>
                 </form>
